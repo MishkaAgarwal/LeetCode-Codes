@@ -1,0 +1,11 @@
+#Question:
+#Given a string s, return true if it is a palindrome, or false otherwise.
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        empty= ''
+        for i in s:
+            if i.isalnum():
+                empty+= i.lower()
+        s= empty
+        y= s[::-1]
+        return s==y
