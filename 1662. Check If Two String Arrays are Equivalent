@@ -1,0 +1,14 @@
+#Question:
+#Given two string arrays word1 and word2, return true if the two arrays represent the same string, and false otherwise.
+class Solution:
+    def arrayStringsAreEqual(self, word1: List[str], word2: List[str]) -> bool:
+        add1=''
+        add2= ''
+        for i in range(len(word1)):
+            add1+= word1[i]
+        for i in range(len(word2)):
+            add2+= word2[i]
+        if add1== add2:
+            return True
+        else:
+            return False
