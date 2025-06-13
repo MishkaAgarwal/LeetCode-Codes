@@ -1,0 +1,12 @@
+#Question
+#Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        add= []
+        empty= []
+        for i in nums:
+            if i ==0:
+                add.append(i)
+            else:
+                empty.append(i)
+        nums[:]= empty+add
