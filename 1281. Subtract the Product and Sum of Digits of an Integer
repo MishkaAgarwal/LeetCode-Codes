@@ -1,0 +1,14 @@
+#Question:
+#Given an integer number n, return the difference between the product of its digits and the sum of its digits.
+class Solution:
+    def subtractProductAndSum(self, n: int) -> int:
+        l = []
+        for digit in str(n):
+            l.append (int(digit))
+            product=1
+            s=0
+        for i in l:
+            product*= i
+            s+= i
+        difference= product-s
+        return difference
