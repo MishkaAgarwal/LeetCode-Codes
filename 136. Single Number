@@ -1,0 +1,10 @@
+#Question:
+#Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        ns= sorted(nums)
+        for i in range (0, len(ns)-1, 2):
+            if ns[i]!= ns[i+1]:
+                return ns[i]
+        else:
+            return ns[-1]
