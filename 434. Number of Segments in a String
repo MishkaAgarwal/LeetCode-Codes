@@ -1,0 +1,12 @@
+#Question:
+#Given a string s, return the number of segments in the string.
+class Solution:
+    def countSegments(self, s: str) -> int:
+        s=s.split()
+        l= list(s)
+        if l== ['']:
+            return 0
+        elif l== [' ']:
+            return 0
+        elif s!= '' and s!= ' ':
+            return len(l)
